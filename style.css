@@ -1,0 +1,336 @@
+:root{
+    --dark:#19191B;
+    --gray:#696871;
+    --purple:#5454D4;
+    --orange:#FF7143;
+}
+html{
+    scroll-padding-top: 100px;
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"DM Sans", sans-serif;
+}
+.header{
+    position:fixed;
+    width:100%;
+    background-color:white;
+    z-index: 999;
+    padding-block:30px;
+    top:0;
+}
+.header_container, .hero-container, .companies_container, .features_container,.mini-features_container,.subscryption__container{
+    max-width: 1069px;
+    margin-inline: auto;
+}
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_list{
+    display: flex;
+    
+    gap:49px;
+}
+ul{
+    list-style: none;
+}
+main{
+    margin-top: 141px;
+}
+.header_list-link{
+    font-weight:700;
+    font-size:15px;
+    letter-spacing: -0.47px;
+    color:var(--gray);
+    transition:color 0.3s ease-in-out;
+    
+
+}
+.header_list-link.active{
+    color:var(--dark);
+    border-bottom: 2px solid var(--purple);
+    padding-bottom: 10px;
+}
+.header_list-link:hover{
+    color:var(--dark);
+}
+a{
+    text-decoration: none;
+}
+p{
+    color:var(--dark);
+}
+.header-button, .hero__button{
+    font-weight:700;
+    font-size:17px;
+    letter-spacing:-0.53px;
+    color:white;
+    padding: 19px 59px;
+    background:var(--orange);
+    border-radius: 10px;
+    transition:opacity 0.3s ease-in-out;
+}
+.header-button:hover, .hero__button:hover{
+    opacity:90%;
+}
+.hero{
+    padding-block: 70px;
+}
+.hero-container{
+    position:relative;
+}
+.hero-content{
+    max-width: 423px;
+    padding-block:92px;
+
+}
+.hero_image{
+    position:absolute;
+    top:0;
+    right:-75px;
+}
+.hero_title{
+    font-weight:700;
+    font-size:80px;
+    letter-spacing:-2.5px;
+    line-height: 77px;
+    color:var(--dark);
+}
+.hero-desc{
+    font-family:"Mulish", sans-serif;
+    font-weight:400;
+    line-height: 30px;
+    letter-spacing:-0.63px;
+    color:var(--gray);
+    margin-top:30px;
+
+}
+.hero__buttons{
+    margin-top: 50px;
+    display: flex;
+    gap:40px;
+}
+.hero__button{
+    background-color:var(--purple);
+}
+.hero_scroll_image{
+    width:60px;
+    height:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid #E7E7E7;
+    border-radius: 100px;
+    transition:opacity 0.3s ease-in-out;
+}
+.hero_scroll_image:hover{
+    opacity:1000%;
+}
+.companies{
+    padding-block:30px;
+
+}
+.companies_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.features{
+    padding-block: 120px;
+}
+.features_container{
+    display: flex;
+    flex-direction: column;
+    gap:69px;
+
+}
+.feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.feature_content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 459px;
+}
+.feature_title{
+    font-weight:700;
+    font-size:50px;
+    letter-spacing:-1.56px;
+    line-height: 57px;
+}
+.feature_desc{
+    font-family:"Mulish", sans-serif;
+    font-weight:400;
+    line-height: 30px;
+    letter-spacing:-0.63px;
+    color:var(--gray);
+    font-size:20px;
+}
+.feature_link{
+    font-weight:700;
+    font-size:17px;
+    letter-spacing:-0.63px;
+    color:var(--purple);
+}
+.feature_link:hover{
+    text-decoration: underline;
+}
+
+.mini-features{
+    padding-block:32px;
+
+}
+.mini-features_container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:74px;
+}
+.mini-feature{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+    text-align:center;
+}
+.mini-feature__header{
+    display:flex;
+    flex-direction: column;
+    gap:7px;
+
+}
+.mini-feature__desc{
+    font-family: "Mulish", sans-serif;
+    letter-spacing: -0.5px;
+    line-height:24px;
+    color:var(--gray);
+}
+
+.mini-feature__image{
+    height:97px;
+}
+
+.subscryption{
+    padding-block:118px 158px;
+
+}
+
+.subscryption__container{
+    display:flex;
+    flex-direction: column;
+    gap:82px;
+
+}
+
+.subscryption__header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.subscryption__title{
+    font-weight:700;
+    font-size:60px;
+    letter-spacing:-1.88px;
+    line-height:70px;
+}
+.subscryption__tabs{
+    display: flex;
+    border-block: 5px solid #F7F7FB;
+    border-inline:6px solid #F7F7FB;
+    border-radius:10px;
+}
+.subscryption__tab{
+    font-family:inherit;
+    font-weight:700;
+    font-size:16px;
+    letter-spacing:-0.5px;
+    border:none;
+
+    background: #F7F7FB;
+    padding:17px 56px;
+    border-radius:0 10px 10px 0;
+    color:var(--dark);
+    cursor:pointer;
+
+
+
+}
+.subscryption__tab.active{
+    background: var(--purple);
+    border-radius:10px 0 0 10px;
+    color:white;
+
+}
+.subscryption__plans{
+    display:grid;
+    grid-template-columns:1fr 1.14fr 1fr;
+    gap:17px;
+}
+.subscryption__plan{
+    padding:34px 23px 27px;
+    background:#F8F8F8;
+    border-radius:10px;
+    text-align:center;
+}
+.subscription__plan-title{
+    font-weight:700;
+    font-size:18px;
+    letter-spacing:-0.56px;
+    line-height:28px;
+    color: var(--gray);
+}
+.subscryption__plan-price{
+    font-weight:700;
+    font-size:60px;
+    letter-spacing:-1.03px;
+    line-height:56px;
+    color:var(--dark);
+    margin-top:22px;
+}
+.subscryption__plan-price > span{
+    font-size:28px;
+
+}
+.subscryption__plan-features{
+    font-family:"Mulish", sans-serif;
+    font-size:17px;
+    letter-spacing:-0.53px;
+    line-height:50px;
+    color: var(--gray);
+    margin-top:28px;
+}
+.subscryption__plan-button{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    background: white;
+    padding-block:19px;
+    border-radius:10px;
+    font-weight:700;
+    font-size:17px;
+    letter-spacing:-0.53px;
+    margin-top:36px;
+
+}
+.subscryption__plan.active{
+    background: var(--orange);
+}
+.subscryption__plan.active .subscription__plan-title{
+    color:rgba(255,255,255,70%);
+}
+.subscryption__plan.active .subscryption__plan-price, .subscryption__plan.active .subscryption__plan-features,.subscryption__plan.active .subscryption__plan-button{
+    color:white;
+}
+.subscryption__plan.active .subscryption__plan-button{
+    background: #9F3919;
+}
